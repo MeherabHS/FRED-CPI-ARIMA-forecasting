@@ -143,16 +143,26 @@ Forecast uncertainty increases with horizon length due to recursive error propag
 - Optimized for short-term forecasting performance  
 
 ---
-## Author
-
-Meherab Hossain Shafin
-
-Independent time-series forecasting study demonstrating statistically disciplined model validation and benchmark comparison for applied macroeconomic forecasting.
-
 ## Reproducibility
 
 Install dependencies:
 
 ```bash
 pip install pandas numpy matplotlib statsmodels scikit-learn
+```
+
+Run the study:
+
+```bash
+python cpi_forecast.py
+```
+
+The script reads `cpi_data.csv` (monthly CPI index levels in a `Value` column, in chronological order). That file is not committed to this repository; download the CPI series from FRED, save it as `cpi_data.csv`, and run the script to reproduce the validation metrics and plots.
+
 ---
+
+## Author
+
+Meherab Hossain Shafin
+
+Independent time-series forecasting study demonstrating statistically disciplined model validation and benchmark comparison for applied macroeconomic forecasting.
